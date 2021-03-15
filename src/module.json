@@ -1,0 +1,17 @@
+{
+	"name": "weyland",
+	"title": "Weyland - Alien UI theme",
+	"description": "",
+	"version": "0.1.0",
+	"author": "Peanuts",
+	"scripts": [],
+	"esmodules": ["weyland.js"],
+	"styles": ["weyland.css"],
+	"packs": [],
+	"languages": [],
+	"minimumCoreVersion": "0.7.9",
+	"compatibleCoreVersion": "0.7.9",
+	"url": "https://github.com/devwebpeanuts/weyland",
+	"manifest": "https://github.com/devwebpeanuts/weyland/releases/download/0.1.0/module.json",
+	"download": "https://github.com/devwebpeanuts/weyland/releases/download/0.1.0/weyland.zip"
+}

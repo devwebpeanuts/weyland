@@ -1,0 +1,6 @@
+{
+  "repository": "https://github.com/path/to/your-repo",
+  "owner": "github-account-name",
+  "token": "github-personal-access-token",
+  "dataPath": "/absolute/path/to/your/foundry-vtt-sandbox/data"
+}

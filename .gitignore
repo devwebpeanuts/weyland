@@ -1,0 +1,6 @@
+node_modules
+foundryconfig.json
+dist
+package
+.idea
+.env
