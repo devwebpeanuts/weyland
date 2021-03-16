@@ -1,0 +1,30 @@
+#playlists {
+    li {
+        &.playlist {
+            .playlist-header {
+                .playlist-name {
+                    i.fa {
+                        color: $color-2;
+                        &:hover {
+                            color: $color-1;
+                            @include glitch;
+                        }
+                    }
+                }
+            }
+            .sound-control {
+                font-size: 12px;
+                color: $color-2;
+                &:hover {
+                    color: $color-1;
+                }
+                &[data-action=sound-repeat] {
+                    color: $color-1;
+                    &.inactive {
+                        color: $color-2;
+                    }
+                }
+            }
+        }
+    }
+}

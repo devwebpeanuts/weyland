@@ -5,6 +5,7 @@ const chalk = require('chalk')
 const archiver = require('archiver')
 const stringify = require('json-stringify-pretty-compact')
 const typescript = require('typescript')
+const exec = require('child_process').execSync
 
 const ts = require('gulp-typescript')
 const sass = require('gulp-sass')
@@ -178,13 +179,13 @@ async function copyFiles() {
 /**
  * Watch for changes for each build step
  */
-function buildWatch() {
+function watch() {
     gulp.watch([
         'src/**/*.ts',
         'src/**/*.scss'
     ], gulp.series(execBuild, copyToFoundry))
     gulp.watch(
-        ['src/fonts', 'src/lang', 'src/templates', 'src/*.json'],
+        ['src/assets', 'src/fonts', 'src/lang', 'src/templates', 'src/*.json'],
         { ignoreInitial: false },
         gulp.series(copyFiles, copyToFoundry)
     )
@@ -422,11 +423,12 @@ function updateManifest(cb) {
         manifest.file.description = packageJson.description
 
         /* Update URLs */
-        const downloadURL = `${repoURL}/releases/download/${manifest.file.version}`
+        const downloadURLlatest = `${repoURL}/releases/latest/download`
+        const downloadURLVersioned = `${repoURL}/releases/download/${manifest.file.version}`
 
         manifest.file.url = repoURL
-        manifest.file.manifest = `${downloadURL}/${manifest.name}`
-        manifest.file.download = `${downloadURL}/${manifest.file.name}.zip`
+        manifest.file.manifest = `${downloadURLlatest}/${manifest.name}`
+        manifest.file.download = `${downloadURLVersioned}/${manifest.file.name}.zip`
 
         const prettyProjectJson = stringify(manifest.file, {
             maxLength: 35,
@@ -439,6 +441,12 @@ function updateManifest(cb) {
             prettyProjectJson,
             'utf8'
         )
+
+        exec('npm install', function(err) {
+            if(err) {
+                throw err
+            }
+        })
 
         return cb()
     } catch (err) {
@@ -493,7 +501,7 @@ const execGit = gulp.series(gitCommit, gitRelease)
 const execBuild = gulp.parallel(buildTS, buildSASS)
 
 exports.build = gulp.series(clean, execBuild, copyFiles)
-exports.watch = buildWatch
+exports.watch = gulp.series(clean, execBuild, copyFiles, watch)
 exports.clean = clean
 exports.copyToFoundry = copyToFoundry
 exports.package = packageBuild
@@ -502,6 +510,7 @@ exports.publish = gulp.series(
     clean,
     updateManifest,
     execBuild,
+    copyFiles,
     packageBuild,
     execGit
 )

@@ -1,0 +1,36 @@
+.roll-table-config {
+    ol {
+        &.table-results {
+            .table-header {
+                border: 2px solid $color-5;
+                background: $color-5;
+                color: $color-4;
+            }
+            .table-result {
+                .result-image {
+                    img {
+                        filter: invert(1);
+                    }
+                }
+                .result-range {
+                    flex: 0 0 98px;
+                }
+                .result-controls {
+                    a:hover {
+                        color: $color-1;
+                    }
+                    .lock-result {
+                        color: $color-2;
+                    }
+                }
+                &.drawn {
+                    .result-controls {
+                        .lock-result {
+                            color: $color-1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

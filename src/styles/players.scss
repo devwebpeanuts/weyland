@@ -1,0 +1,19 @@
+#players {
+    bottom: 10px;
+    background: $color-4;
+    border-radius: 0;
+    border: 2px solid $color-2;
+    box-shadow: 0 0 20px $color-4;
+    h3 {
+        border-bottom: 6px double $color-2;
+        color: $color-2;
+
+        .players-mode {
+            color: unset;
+            &:hover {
+                cursor: pointer;
+                @include glitch;
+            }
+        }
+    }
+}

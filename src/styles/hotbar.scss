@@ -1,0 +1,69 @@
+#hotbar {
+    height: 56px;
+    #action-bar {
+        height: 56px;
+    }
+    width: 618px;
+    .bar-controls {
+        color: $color-2;
+        background: $color-4;
+        border: 2px solid $color-2;
+        box-shadow: 0 0 20px $color-4;
+        span {
+            &.page-number {
+                font-size: 0.95em;
+                line-height: 12px;
+            }
+        }
+        a {
+            &.page-control:hover {
+                @include glitch;
+            }
+        }
+    }
+
+    #macro-list {
+        border-radius: 0;
+        background: $color-4;
+        border: 1px solid $color-2;
+        box-shadow: 0 0 20px $color-4;
+        flex: 0 0 542px;
+    }
+    .macro {
+        border: 4px double $color-2;
+        background: unset;
+        box-shadow: 0 0 5px $color-7 inset;
+        border-radius: 0;
+        height: 54px;
+        flex: 0 0 54px;
+        &.inactive {
+            box-shadow: 0 0 5px $color-7 inset;
+        }
+        &:hover {
+            border: 4px double $color-2;
+            box-shadow: 0 0 10px $color-1;
+        }
+        &.active:hover {
+            border: 4px double $color-2;
+        }
+        &:hover, &:hover.active
+        {
+            .macro-key {
+                @include glitch;
+            }
+        }
+        .macro-key {
+            color: $color-3;
+        }
+        .tooltip {
+            color: $color-4;
+            background: $color-1;
+            border: 0;
+        }
+    }
+    #hotbar-directory-controls {
+        #bar-toggle:hover, #macro-directory:hover {
+            @include glitch;
+        }
+    }
+}

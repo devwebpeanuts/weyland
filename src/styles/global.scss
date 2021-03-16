@@ -1,0 +1,44 @@
+body {
+    background-image: url("assets/img/weyland.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: $color-4;
+    font-family: 'OCR A Std';
+    font-size: 12px;
+}
+
+.app {
+    color: $color-2;
+    border-radius: 0;
+    background: $color-4;
+}
+
+a {
+    &:hover {
+        @include glitch;
+    }
+}
+img {
+    border-radius: 0;
+    border: 0;
+}
+nav {
+    &.list-filters {
+        background: $color-5;
+        a {
+            &.filter {
+                color: $color-4;
+                &.active {
+                    background: $color-2;
+                    color: $color-5;
+                }
+            }
+        }
+    }
+}
+.editor-edit {
+    border-radius: 0;
+    border: $color-2;
+    background: $color-2;
+    color: $color-4;
+}

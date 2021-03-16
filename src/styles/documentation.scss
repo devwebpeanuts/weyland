@@ -1,0 +1,41 @@
+#controls-reference {
+    h2 {
+        border-top: 2px solid $color-5;
+        border-bottom: 2px solid $color-5;
+        background: $color-5;
+        color: $color-4;
+        line-height: 25px;
+        padding: 0 5px;
+    }
+
+    h3 {
+        border-top: 2px solid $color-7;
+        border-bottom: 2px solid $color-7;
+        background: $color-7;
+        color: $color-5;
+        line-height: 25px;
+        padding: 0 5px;
+    }
+    ol.hotkey-list {
+        li {
+            .key {
+                border-radius: 0;
+                background: $color-2;
+                border: 1px solid $color-2;
+                color: $color-4;
+            }
+            &.gm {
+                .key {
+                    background: $color-3;
+                    border: 1px solid $color-3;
+                    color: $color-4;
+                }
+            }
+        }
+    }
+}
+#documentation {
+    iframe {
+        border: 0;
+    }
+}

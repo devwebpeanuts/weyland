@@ -1,0 +1,24 @@
+#compendium {
+    h3 {
+        border-top: 2px solid $color-7;
+        border-bottom: 2px solid $color-7;
+        background: $color-7;
+        color: $color-5;
+        line-height: 25px;
+    }
+    li {
+        &.compendium-pack {
+            border-bottom: 2px solid $color-2;
+            .status-icons {
+                color: $color-2;
+            }
+        }
+    }
+}
+.compendium {
+    .directory-list {
+        .directory-item {
+            border-bottom: unset;
+        }
+    }
+}

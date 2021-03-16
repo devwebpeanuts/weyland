@@ -1,0 +1,160 @@
+#sidebar {
+    width: 302px;
+    background: $color-4;
+    box-shadow: 0 0 30px #000 inset;
+    border: 2px solid $color-7;
+
+    #sidebar-tabs {
+        box-shadow: 0 0 5px $color-5;
+        font-size: 16px;
+        margin: 0;
+        border: unset;
+        .collapse {
+            background: $color-5;
+            color: $color-4;
+            line-height: 33px;
+            flex: 0 0 28px;
+            &:hover {
+                background: $color-3 !important;
+                box-shadow: 0 0 5px $color-1 !important;
+            }
+        }
+
+        & > .item {
+            font-size: 1em !important;
+            border-radius: 0;
+            border: unset;
+            background: $color-5;
+            color: $color-4;
+            &:hover, &.active {
+                border-radius: 0;
+            }
+            &.active {
+                &, &:hover {
+                    box-shadow: 0 0 5px $color-2 !important;
+                    background: $color-2 !important;
+                    color: $color-5 !important;
+                }
+            };
+            &:hover {
+                box-shadow: 0 0 5px $color-1 !important;
+                background: $color-3 !important;
+                color: $color-4 !important;
+            }
+        }
+    }
+
+    &.collapsed {
+        border: 0;
+        background: unset;
+        box-shadow: unset;
+        #sidebar-tabs {
+            border-bottom: unset;
+            .collapse {
+                border-bottom: unset;
+                flex: 0 0 27px;
+            }
+
+            & > .item {
+                border-bottom: unset;
+                border-radius: 0;
+                &.active {
+                    border-radius: 0;
+                    border: unset;
+                    color: $color-4;
+                    background: $color-1;
+                    box-shadow: 0 0 5px $color-1;
+                }
+            }
+        }
+    }
+}
+.sidebar-tab
+{
+    .action-buttons {
+        button {
+            height: unset;
+            font-size: 0.9em;
+        }
+    }
+    .directory-header {
+        margin-top: 10px;
+        .header-search {
+            .header-control {
+                &:hover {
+                    color: $color-1;
+                }
+            }
+            input {
+                background: $color-7;
+                color: $color-2;
+                &:focus {
+                    background: $color-1;
+                }
+            }
+        }
+    }
+    .directory-list {
+        .entity {
+            border-top: 2px solid transparent;
+            border-bottom: 2px solid transparent;
+        }
+        .directory-item {
+            &.context, &.active {
+                border-color: $color-1;
+            }
+        }
+        .folder {
+            .context {
+                border: 2px solid $color-1;
+                box-shadow: 0 0 10px $color-1 inset;
+            }
+        }
+    }
+}
+li {
+    &.folder  {
+        &.drop-target, &.droptarget {
+            & > header h3 {
+                text-shadow: 0 0 4px $color-5;
+                i {
+                    text-shadow: 0 0 4px $color-5;
+                }
+            }
+        }
+        &.collapsed {
+            .folder-header {
+                border-left: 2px solid transparent;
+                background: $color-2;
+                color: $color-4;
+                h3 {
+                    text-shadow: unset;
+                }
+            }
+        }
+        & > .folder-header {
+            border-left: 2px solid $color-1;
+            background: $color-1;
+            color: $color-4;
+            h3 {
+                color: $color-4;
+            }
+            .create-folder, .create-entity {
+                color: unset;
+                &:hover {
+                    color: $color-5;
+                }
+            }
+        }
+    }
+}
+.subdirectory {
+    border-left: 8px solid transparent;
+    border-bottom: 2px solid transparent;
+    .folder {
+        border-left: unset;
+    }
+}
+.app.sidebar-popout {
+    border: 2px solid $color-2;
+}

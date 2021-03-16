@@ -1,0 +1,67 @@
+.alienrpg
+{
+    .actor-header {
+        background: $color-4;
+    }
+    .sheet-body, .tab, .editor {
+        background: unset;
+    }
+    .window-content {
+        &::before {
+            content: unset;
+        }
+        &::after {
+            content: unset;
+        }
+    }
+    .textbox, .maxboxsize {
+        border: unset;
+        background: $color-7;
+    }
+    input[type="text"], input[type="number"], input[type="password"], input[type="date"], input[type="time"], select, .select-css {
+        border-radius: 0;
+        border: 0;
+        background: $color-7;
+        &:hover {
+            border: 0;
+        }
+        color: $color-2;
+        &:focus {
+            box-shadow:  0 0 5px $color-1;
+            background: $color-1;
+            border: 2px solid $color-1;
+            color: $color-4;
+            &::placeholder {
+                color: $color-4;
+                opacity: 50%;
+            }
+        }
+        &::placeholder {
+            color: $color-2;
+            opacity: 40%;
+        }
+    }
+    .fas:hover {
+        color: inherit;
+        text-shadow: inherit;
+    }
+    .vehicle-header {
+        background: $color-4;
+    }
+}
+.tabs {
+    .item {
+        font-size: 0.85em !important;
+        &.active {
+            font-size: 0.85em !important;
+            text-shadow: 0 0 10px $color-1;
+        }
+    }
+}
+.resource-content {
+    button:hover {
+        background: transparent;
+        border: 0;
+        box-shadow: unset;
+    }
+}

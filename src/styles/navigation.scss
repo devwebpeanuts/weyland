@@ -1,0 +1,49 @@
+#navigation {
+    #nav-toggle {
+        box-shadow: 0 0 20px $color-4;
+        border: 2px solid $color-2;
+        border-radius: 0;
+        background: $color-4;
+        color: $color-2;
+        &:hover {
+            box-shadow: 0 0 20px $color-1;
+            border: 2px solid $color-1;
+            background: $color-1;
+            color: $color-4;
+            @include glitch;
+        }
+    }
+    #scene-list {
+        .scene {
+            border: 2px solid $color-2;
+            background: $color-4;
+            box-shadow: 0 0 20px $color-4;
+            color: $color-2;
+            &.active {
+                color: $color-4;
+                border: 2px solid $color-2;
+                background: $color-2;
+            }
+            &.view, &.context {
+                color: $color-4;
+                border: 2px solid $color-1;
+                background: $color-1;
+                box-shadow: 0 0 20px $color-1;
+            }
+            &.view {
+                &.active {
+                    color: $color-4;
+                    border: 2px solid $color-1;
+                    background: $color-1;
+                    box-shadow: 0 0 20px $color-1;
+                }
+            }
+            &.gm {
+                border: 2px dashed $color-2;
+            }
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}

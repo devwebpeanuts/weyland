@@ -1,0 +1,16 @@
+#context-menu {
+    min-width: 170px;
+    font-size: 0.9em;
+    border: 0;
+    border-radius: 0;
+    background: $color-2;
+    color: $color-4;
+    li {
+        &.context-item:hover {
+            cursor: pointer;
+            color: $color-4;
+            background: $color-1;
+            @include glitch;
+        }
+    }
+}

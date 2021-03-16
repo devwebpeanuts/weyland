@@ -1,0 +1,23 @@
+#chat-form {
+    textarea {
+        background: $color-7;
+        &:focus {
+            background: $color-1;
+        }
+    }
+}
+
+#chat-controls {
+    margin: 6px;
+    .control-buttons {
+        a {
+            width: unset;
+        }
+    }
+    .roll-type-select {
+        background: $color-7;
+        &:focus {
+            background: $color-1;
+        }
+    }
+}

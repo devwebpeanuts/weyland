@@ -1,0 +1,47 @@
+#module-management {
+    .list-filters {
+        align-items: center;
+        input {
+            height: 35px;
+            flex: 3 0 auto;
+        }
+        a {
+            &.filter {
+                text-align: center;
+                flex: 1 0 auto;
+                height: 35px;
+                line-height: 28px;
+                color: $color-4;
+                margin-left: 0;
+                padding: 0 5px;
+                border-bottom: 0;
+                &:hover {
+                    background: $color-3;
+                }
+                &.active {
+                    background: $color-2;
+                    color: $color-5;
+                }
+            }
+        }
+    }
+    .expand {
+        flex: 0 0 35px;
+        margin: 0;
+        height: 35px;
+    }
+    .package-list {
+        margin: 10px 0;
+        border-top: unset;
+        .package {
+            padding: 10px;
+            border-bottom: unset;
+            &:nth-of-type(odd) {
+                background: $color-7;
+            }
+        }
+        .package-title, .package-metadata, .package-description {
+            color: $color-2;
+        }
+    }
+}

@@ -1,8 +1,8 @@
 {
   "private": true,
   "name": "weyland",
-  "version": "0.1.0",
-  "description": "",
+  "version": "0.0.1",
+  "description": "Foundry VTT theming module for AlienRPG system and Alien RPG CRT UI",
   "repository": "https://github.com/devwebpeanuts/weyland",
   "scripts": {
     "package": "gulp package",

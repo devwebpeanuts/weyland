@@ -1,0 +1,102 @@
+form {
+    .notes, .hint, .form-group span.units {
+        color: $color-6;
+    }
+
+    .form-group, .form-group-stacked {
+        margin: 10px 0;
+        padding-left: 15px;
+        button {
+            margin: 0 5px;
+        }
+    }
+
+    button {
+        border: 2px solid $color-2;
+        background: $color-4;
+    }
+}
+
+select, input[type="text"], input[type="number"], input[type="password"], input[type="date"], input[type="time"] {
+    font-family: 'OCR A Std';
+    border-radius: 0;
+    border: 0;
+    background: $color-7;
+    color: $color-2;
+    &:focus {
+        box-shadow:  0 0 5px $color-1;
+        background: $color-1;
+        border: 2px solid $color-1;
+        color: $color-4;
+        &::placeholder {
+            color: $color-4;
+            opacity: 50%;
+        }
+    }
+    &::placeholder {
+        color: $color-2;
+        opacity: 40%;
+    }
+}
+textarea {
+    font-family: 'OCR A Std';
+    border-radius: 0;
+    border: 0;
+    background: $color-7;
+    color: $color-2;
+    &:focus {
+        color: $color-4 !important;
+        outline: 0;
+        box-shadow:  0 0 5px $color-1;
+    }
+}
+input[type="color"][data-edit] {
+    border: 0;
+}
+input[type=range] {
+    & + .range-value {
+        border: 0;
+        background: $color-7;
+        color: $color-2;
+    }
+}
+input[type=range]::-webkit-slider-runnable-track,
+input[type=range]::-moz-range-track,
+input[type=range]::-ms-track
+{
+    &:focus {
+        background-color: $color-5;
+    }
+    background-color: $color-5;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    background: $color-2;
+}
+input[type=range]::-moz-range-thumb {
+    background: $color-2;
+}
+input[type=range]::-ms-thumb {
+    background: $color-2;
+}
+input[type="checkbox"]:checked, input[type="radio"]:checked {
+    &, &:hover {
+        filter: hue-rotate(244deg) brightness(0.8) contrast(3);
+    }
+}
+button {
+    font-family: 'OCR A Std';
+    margin: 0;
+    color: $color-2;
+    background: $color-4;
+    border: 2px solid $color-2;
+    border-radius: 0;
+    cursor: pointer;
+    &:hover, &:focus {
+        background: $color-1;
+        color: $color-4;
+        border: 2px solid $color-1;
+        box-shadow:  0 0 10px $color-1;
+        @include glitch;
+    }
+}

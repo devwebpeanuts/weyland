@@ -1,3 +1,4 @@
 Hooks.once('ready', function() {
-    // Will add flickering, scanlines effects to Foundry
+    const scanline = $('<div>').addClass('scanline');
+    $('body').append(scanline)
 })

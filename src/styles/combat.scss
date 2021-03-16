@@ -1,0 +1,62 @@
+#combat {
+    #combat-tracker {
+        padding: 0;
+    }
+    #combat-controls {
+        border-top: 2px solid $color-2;
+        .combat-control {
+            &:hover {
+                color: $color-1;
+            }
+        }
+    }
+    #combat-round {
+        margin-top: 10px;
+        border-bottom: 6px double $color-2;
+        .encounters {
+            a {
+                color: $color-2;
+                &:hover {
+                    color: $color-1;
+                }
+            }
+            h3 {
+                font-size: 0.7em;
+            }
+            h4 {
+                color: $color-2;
+                font-weight: bold;
+                font-size: 0.78em;
+            }
+        }
+    }
+    li {
+        &.combatant {
+            .token-name {
+                .combatant-control {
+                    color: $color-2;
+                }
+            }
+            .token-resource {
+                border-right: unset;
+            }
+            &:hover {
+                background: inherit;
+            }
+            &.active {
+                background: $color-2;
+                .token-name {
+                    color: $color-4;
+                }
+                .token-initiative {
+                    .initiative {
+                        color: $color-4;
+                    }
+                }
+            }
+            .roll:hover {
+                background-image: url('assets/dices/d20-alien.svg');
+            }
+        }
+    }
+}

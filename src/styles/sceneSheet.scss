@@ -1,0 +1,12 @@
+.scene-sheet {
+    .form-header {
+        border: 2px solid $color-5;
+        background: $color-5;
+        color: $color-4;
+        h3 {
+            border-top: unset;
+            border-bottom: unset;
+            padding: 0 5px;
+        }
+    }
+}
