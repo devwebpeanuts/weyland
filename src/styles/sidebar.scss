@@ -34,12 +34,14 @@
                     box-shadow: 0 0 5px $color-2 !important;
                     background: $color-2 !important;
                     color: $color-5 !important;
+                    text-shadow: unset;
                 }
             };
             &:hover {
                 box-shadow: 0 0 5px $color-1 !important;
                 background: $color-3 !important;
                 color: $color-4 !important;
+                text-shadow: unset;
             }
         }
     }
