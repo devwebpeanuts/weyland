@@ -36,3 +36,56 @@ nav {
     background: $color-2;
     color: $color-4;
 }
+.journal-sheet {
+    button, select {
+        font-family: 'OCR A Std';
+        margin: 0;
+        color: $color-2;
+        background: $color-4;
+        border: 2px solid $color-2;
+        border-radius: 0;
+        cursor: pointer;
+        &:hover, &:focus {
+            background: $color-1;
+            color: $color-4;
+            border: 2px solid $color-1;
+            box-shadow:  0 0 10px $color-1;
+        }
+    }
+    select {
+        border: 0;
+        background: $color-7;
+        &:focus {
+            box-shadow:  0 0 5px $color-1;
+            background: $color-1;
+            border: 2px solid $color-1;
+            color: $color-4;
+            &::placeholder {
+                color: $color-4;
+                opacity: 50%;
+            }
+        }
+        &::placeholder {
+            color: $color-2;
+            opacity: 40%;
+        }
+    }
+}
+.editor-content {
+    a {
+        &.entity-link, &.inline-roll {
+            border-radius: 0;
+            border: 1px solid $color-5;
+            background-color: $color-5;
+            color: $color-4;
+            i {
+                color: $color-4;
+            }
+            &:hover {
+                border: 1px solid $color-1;
+                background-color: $color-1;
+                text-shadow: unset;
+            }
+        }
+    }
+}
