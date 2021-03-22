@@ -1,0 +1,10 @@
+{
+  "WEYLAND": {
+    "flickering": "Effet de scintillement",
+    "flickeringHint": "Activer l'effet de scintillement.",
+    "screenDoor": "Effet de grille",
+    "screenDoorHint": "Activer l'effet de grille: l'image apparaît comme si on la regardait à travers un tamis fin ou une moustiquaire.",
+    "scanline": "Animation balayage vertical",
+    "scanlineHint": "Activer l'affichage d'une ligne horizontale qui balaye régulièrement l'écran du haut vers le bas."
+  }
+}

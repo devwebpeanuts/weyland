@@ -64,7 +64,7 @@
     }
 }
 
-body.vtt.game::before {
+body.vtt.game.screen-door::before {
     content: " ";
     display: block;
     position: absolute;
@@ -77,7 +77,7 @@ body.vtt.game::before {
     background-size: 100% 2px, 3px 100%;
     pointer-events: none;
 }
-body.vtt.game::after {
+body.vtt.game.flickering::after {
     content: " ";
     display: block;
     position: absolute;

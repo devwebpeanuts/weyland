@@ -1,0 +1,10 @@
+{
+  "WEYLAND": {
+    "flickering": "Flickering effect",
+    "flickeringHint": "Enable screen flickering effect.",
+    "screenDoor": "Screen-door effect",
+    "screenDoorHint": "Enable screen-door effect: a mesh-like appearance where you can see the gaps between pixels on the screen.",
+    "scanline": "Scanline animation",
+    "scanlineHint": "Enable display of the horizontal line that scans the screen from top to bottom."
+  }
+}
