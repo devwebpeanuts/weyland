@@ -53,6 +53,11 @@
             background-color: $color-7;
         }
     }
+    .resource-content {
+        button:hover {
+            color: $color-1;
+        }
+    }
 }
 .tabs {
     .item {
