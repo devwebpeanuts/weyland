@@ -7,7 +7,6 @@
                         color: $color-2;
                         &:hover {
                             color: $color-1;
-                            @include glitch;
                         }
                     }
                 }

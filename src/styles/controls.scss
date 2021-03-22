@@ -15,12 +15,6 @@
                 border-bottom: 2px solid $color-1;
                 box-shadow: 0 0 5px $color-1;
             }
-
-            &:hover {
-                & > i {
-                    @include glitch;
-                }
-            }
         }
     }
 }

@@ -12,12 +12,6 @@ body {
     border-radius: 0;
     background: $color-4;
 }
-
-a {
-    &:hover {
-        @include glitch;
-    }
-}
 img {
     border-radius: 0;
     border: 0;

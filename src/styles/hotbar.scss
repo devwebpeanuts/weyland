@@ -15,11 +15,6 @@
                 line-height: 12px;
             }
         }
-        a {
-            &.page-control:hover {
-                @include glitch;
-            }
-        }
     }
 
     #macro-list {
@@ -46,12 +41,6 @@
         &.active:hover {
             border: 4px double $color-2;
         }
-        &:hover, &:hover.active
-        {
-            .macro-key {
-                @include glitch;
-            }
-        }
         .macro-key {
             color: $color-3;
         }
@@ -59,11 +48,6 @@
             color: $color-4;
             background: $color-1;
             border: 0;
-        }
-    }
-    #hotbar-directory-controls {
-        #bar-toggle:hover, #macro-directory:hover {
-            @include glitch;
         }
     }
 }
