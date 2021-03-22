@@ -48,6 +48,11 @@
     .vehicle-header {
         background: $color-4;
     }
+    .dots {
+        &.starving, &.exhausted, &.panic {
+            background-color: $color-7;
+        }
+    }
 }
 .tabs {
     .item {
