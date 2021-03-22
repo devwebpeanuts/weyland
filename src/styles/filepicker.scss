@@ -1,0 +1,112 @@
+.filepicker {
+    .current-dir {
+        button {
+            background: $color-4;
+            border: 2px solid $color-2;
+            border-radius: 0;
+            line-height: unset;
+            &:hover {
+                background: $color-1;
+                color: $color-4;
+                border: 2px solid $color-1;
+            }
+        }
+    }
+    .display-modes {
+        a {
+            border: 2px solid $color-2;
+            background: $color-4;
+            border-radius: 0;
+            &.active {
+                text-shadow: unset;
+                border: 2px solid $color-1;
+                background: $color-1;
+                color: $color-4;
+                box-shadow: 0 0 5px $color-1;
+            }
+        }
+    }
+    .directory {
+        border-radius: 0;
+        border: 2px solid $color-2;
+        background: $color-7;
+        & > li {
+            border-bottom: unset;
+        }
+        li {
+            border: 1px solid transparent;
+            &:hover {
+                color: $color-4;
+                text-shadow: unset;
+                background: $color-1;
+            }
+            &.picked {
+                color: $color-4;
+                background: $color-1;
+            }
+        }
+    }
+    .images-list, .tiles-list {
+        li {
+            &:hover {
+                background: $color-4;
+                border: 2px solid $color-1;
+            }
+            &.picked {
+                background: $color-4;
+                border: 2px solid $color-1;
+            }
+        }
+    }
+    .images-list {
+        li {
+            padding-bottom: 10px;
+            border: unset;
+            border-top: 2px solid $color-4;
+            span {
+                &.filename {
+                    border-radius: 0;
+                    background: $color-4;
+                    color: $color-5;
+                    border: unset;
+                }
+            }
+        }
+    }
+    .tiles-list {
+        li {
+            &.picked {
+                box-shadow: unset;
+            }
+        }
+    }
+    .private {
+        .directory {
+            background: $color-4;
+        }
+        button {
+            &.privacy {
+                background: $color-1;
+                color: $color-4;
+                border: 2px solid $color-1;
+                box-shadow: 0 0 5px $color-1;
+            }
+        }
+    }
+    .public {
+        .private {
+            &.dir {
+                background: $color-4;
+            }
+        }
+    }
+    .tabs {
+        background: $color-5;
+        .item {
+            color: $color-4;
+            &:hover {
+                background: $color-3;
+            }
+        }
+    }
+}
