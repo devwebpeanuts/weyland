@@ -18,7 +18,7 @@ form {
 }
 
 select, input[type="text"], input[type="number"], input[type="password"], input[type="date"], input[type="time"] {
-    font-family: 'OCR A Std';
+    font-family: 'Orbitron', sans-serif;
     border-radius: 0;
     border: 0;
     background: $color-7;
@@ -39,7 +39,7 @@ select, input[type="text"], input[type="number"], input[type="password"], input[
     }
 }
 textarea {
-    font-family: 'OCR A Std';
+    font-family: 'Orbitron', sans-serif;
     border-radius: 0;
     border: 0;
     background: $color-7;
@@ -85,7 +85,7 @@ input[type="checkbox"]:checked, input[type="radio"]:checked {
     }
 }
 button {
-    font-family: 'OCR A Std';
+    font-family: 'Orbitron', sans-serif;
     margin: 0;
     color: $color-2;
     background: $color-4;
