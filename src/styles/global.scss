@@ -10,6 +10,9 @@ body {
     border-radius: 0;
     background: $color-4;
 }
+a:hover {
+    text-shadow: 0 0 8px $color-2;
+}
 img {
     border-radius: 0;
     border: 0;
