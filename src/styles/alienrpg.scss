@@ -69,9 +69,12 @@
     }
 }
 .resource-content {
-    button:hover {
+    button:hover, button:focus {
         background: transparent;
         border: 0;
         box-shadow: unset;
+    }
+    button:focus {
+        color: $color-1;
     }
 }
