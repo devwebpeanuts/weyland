@@ -1,7 +1,7 @@
 .sheet {
     nav.sheet-tabs {
-        border-top: 2px solid $color-5;
-        border-bottom: 2px solid $color-5;
+        border-top: unset;
+        border-bottom: unset;
         background: $color-5;
         .item {
             color: $color-4;
