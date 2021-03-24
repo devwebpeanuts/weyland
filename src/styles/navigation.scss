@@ -14,6 +14,7 @@
     }
     #scene-list {
         .scene {
+            border-radius: 0;
             border: 2px solid $color-2;
             background: $color-4;
             box-shadow: 0 0 20px $color-4;
