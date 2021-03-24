@@ -2,7 +2,7 @@
 	"name": "weyland",
 	"title": "Weyland - Alien UI theme",
 	"description": "Foundry VTT theming module for AlienRPG system",
-	"version": "0.2.1",
+	"version": "0.2.2",
 	"author": "Peanuts",
 	"scripts": ["weyland.js"],
 	"styles": ["weyland.css"],
@@ -23,5 +23,5 @@
 	"compatibleCoreVersion": "0.7.9",
 	"url": "https://github.com/devwebpeanuts/weyland",
 	"manifest": "https://github.com/devwebpeanuts/weyland/releases/latest/download/module.json",
-	"download": "https://github.com/devwebpeanuts/weyland/releases/download/0.2.1/weyland.zip"
+	"download": "https://github.com/devwebpeanuts/weyland/releases/download/0.2.2/weyland.zip"
 }

@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "weyland",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Foundry VTT theming module for AlienRPG system",
   "repository": "https://github.com/devwebpeanuts/weyland",
   "scripts": {
