@@ -1,0 +1,35 @@
+.gm-screen-app {
+    &.gm-screen-drawer.expanded, .gm-screen-actions {
+        button {
+            background: $color-4 !important;
+            border: 2px solid $color-2;
+            border-radius: 0;
+            cursor: pointer;
+            &:hover, &:focus, .active {
+                background: $color-1 !important;
+                color: $color-4 !important;
+                border: 2px solid $color-1 !important;
+                box-shadow:  0 0 10px $color-1 !important;
+                text-shadow: unset !important;
+            }
+            &.active {
+                color: $color-4 !important;
+                background: $color-1 !important;
+                border: 2px solid $color-1 !important;
+                box-shadow:  0 0 10px $color-1 !important;
+            }
+        }
+    }
+    &.gm-screen-drawer {
+        background: $color-4;
+        .gm-screen-actions {
+            bottom: calc(100%);
+        }
+    }
+    .gm-screen-grid-cell {
+        border-radius: 0;
+    }
+    .gm-screen-grid-cell-header > :not(:last-child) {
+        margin: 5px;
+    }
+}

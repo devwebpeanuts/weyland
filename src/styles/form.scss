@@ -89,6 +89,7 @@ input[type="checkbox"]:checked, input[type="radio"]:checked {
 button {
     font-family: 'Orbitron', sans-serif;
     margin: 0;
+    margin-bottom: 5px;
     color: $color-2;
     background: $color-4;
     border: 2px solid $color-2;

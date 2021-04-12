@@ -3,12 +3,6 @@
         #user-mode-container {
             table {
                 margin-top: 2em;
-                color: $color-5;
-                border-top: 1px solid $color-5;
-                border-bottom: 1px solid $color-5;
-                tr:nth-child(even) {
-                    background: $color-7;
-                }
             }
         }
     }

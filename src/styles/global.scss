@@ -90,3 +90,18 @@ nav {
         }
     }
 }
+h2 {
+    border-bottom: 0;
+}
+table {
+    border-top: 1px solid $color-5;
+    border-bottom: 1px solid $color-5;
+    thead, th {
+        color: $color-5;
+        background: transparent;
+        border-bottom: $color-5;
+    }
+    tr, tr:nth-child(even) {
+        background: $color-4;
+    }
+}
