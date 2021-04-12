@@ -58,6 +58,15 @@
             color: $color-1;
         }
     }
+    .Col3 {
+        .panel {
+            font-size: 14px;
+            border-left: 1px solid $color-1;
+            h2 {
+                margin-left: 0;
+            }
+        }
+    }
 }
 .tabs {
     .item {
