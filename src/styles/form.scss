@@ -36,6 +36,9 @@ select, input[type="text"], input[type="number"], input[type="password"], input[
         color: $color-2;
         opacity: 40%;
     }
+    &:disabled {
+        color: darken($color-2, 15%);
+    }
 }
 textarea {
     font-family: 'Orbitron', sans-serif;
@@ -97,4 +100,13 @@ button {
         border: 2px solid $color-1;
         box-shadow:  0 0 10px $color-1;
     }
+    &:disabled {
+        background: $color-4;
+        border: 2px solid darken($color-2, 20%);
+        color: darken($color-2, 20%);
+        &:hover, &:focus {
+            box-shadow: unset;
+        }
+    }
+
 }
