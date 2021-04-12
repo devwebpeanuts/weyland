@@ -1,0 +1,40 @@
+#playlists {
+    li {
+        &.sound {
+            height: 20px;
+            &.sound-is-playing {
+                border-top: 1px solid $color-1;
+                background: $color-7;
+            }
+        }
+    }
+    .directory-list {
+        .now-playing {
+            border-top: 1px solid $color-1;
+            background: $color-7;
+        }
+    }
+}
+.macro-sheet {
+    .form-group.command {
+        .furnace-macro-command {
+            border: 0;
+            pre {
+                background: $color-5;
+            }
+        }
+        .furnace-macro-expand {
+            border-radius: 0;
+            color: $color-4;
+            background: $color-2;
+        }
+    }
+}
+.furnace-macro-run-as-gm {
+    .tooltip {
+        color: $color-4;
+        background: $color-1;
+        border: 0;
+        border-radius: 0;
+    }
+}
