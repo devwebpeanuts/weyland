@@ -97,11 +97,12 @@ table {
     border-top: 1px solid $color-5;
     border-bottom: 1px solid $color-5;
     thead, th {
-        color: $color-5;
-        background: transparent;
+        color: $color-4;
+        background: $color-5;
         border-bottom: $color-5;
+        text-shadow: unset;
     }
     tr, tr:nth-child(even) {
-        background: $color-4;
+        background: transparent;
     }
 }

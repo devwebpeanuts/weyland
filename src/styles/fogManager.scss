@@ -3,6 +3,12 @@
         #user-mode-container {
             table {
                 margin-top: 2em;
+                tr:not(:first-child) {
+                    th:first-child {
+                        background: transparent;
+                        color: $color-5;
+                    }
+                }
             }
         }
     }
