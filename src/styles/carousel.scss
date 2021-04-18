@@ -1,0 +1,86 @@
+#combat-carousel {
+    .carousel-icon {
+        border: 2px solid $color-2;
+        border-radius: 0;
+        width: 40px;
+        height: 40px;
+        background: $color-4;
+
+        &:hover {
+            border-bottom: 0;
+            border: 2px solid $color-1;
+            background: $color-1;
+            box-shadow:  0 0 10px $color-1;
+
+            #combat-carousel-toggle {
+                filter: invert(100%) sepia(0%) saturate(7469%) hue-rotate(220deg) brightness(104%) contrast(108%);
+            }
+        }
+    }
+    .encounter-info {
+        color: $color-5;
+        background: $color-4;
+        border: 2px solid $color-5;
+        border-radius: 0;
+    }
+    .encounter-control {
+        &:hover {
+            text-shadow: 0 0 8px $color-1;
+            color: $color-1;
+        }
+    }
+    .combat-control {
+        a {
+            color: $color-2;
+            border: 2px solid $color-2;
+            background: $color-4;
+            border-radius: 0;
+            &:hover {
+                color: $color-4;
+                border: 2px solid $color-1;
+                background: $color-1;
+                text-shadow: unset;
+                box-shadow:  0 0 10px $color-1;
+            }
+        }
+    }
+    .splide__slide:hover {
+        .name {
+            border: 0;
+            border-radius: 0;
+        }
+        .fa-dice-d20 {
+            color: $color-2;
+            &:hover {
+                color: $color-1;
+                text-shadow: 0 0 8px $color-1;
+            }
+        }
+    }
+    .card {
+        border-radius: 0;
+        border: 0;
+        .active-combatant {
+            filter: invert(100%) sepia(0%) saturate(7469%) hue-rotate(220deg) brightness(104%) contrast(108%);
+        }
+        &.is-active {
+            border: 1px solid $color-2;
+        }
+    }
+    .fa-dice-d20 {
+        color: $color-6;
+    }
+    a.combatant-control {
+        color: $color-5;
+        &:hover {
+            color: $color-1;
+            text-shadow: 0 0 8px $color-1;
+        }
+    }
+}
+
+#combat-carousel-toggle {
+    border: 0;
+    border-radius: 0;
+    filter: invert(49%) sepia(8%) saturate(3366%) hue-rotate(88deg) brightness(103%) contrast(89%);
+}
