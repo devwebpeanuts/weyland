@@ -1,0 +1,11 @@
+.motion-tracker-ico {
+    filter: sepia(100%) saturate(1000%) brightness(60%) hue-rotate(88deg);
+}
+
+.motion-tracker-dialog {
+    border: 0;
+
+    .window-content {
+        margin-top: 0;
+    }
+}
