@@ -54,8 +54,11 @@
         }
     }
     .resource-content {
-        button:hover {
-            color: $color-1;
+        button {
+            border: none;
+            &:hover:not(:disabled) {
+                color: $color-1;
+            }
         }
     }
     .Col3 {
