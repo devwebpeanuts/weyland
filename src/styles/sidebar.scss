@@ -97,20 +97,31 @@
             }
         }
     }
+}
+.directory  {
     .directory-list {
-        .entity {
-            border-top: 2px solid transparent;
-            border-bottom: 2px solid transparent;
-        }
         .directory-item {
             &.context, &.active {
                 border-color: $color-2;
             }
-        }
-        .folder {
-            .context {
+
+            &.folder .context {
+                background-color: $color-1 !important;
                 border: 2px solid $color-1;
                 box-shadow: 0 0 10px $color-1 inset;
+            }
+
+            &.folder.collapsed .context {
+                background-color: $color-2 !important;
+            }
+
+            &.document {
+                border-top: 2px solid transparent;
+                border-bottom: 2px solid transparent;
+
+                &.context {
+                    background-color: transparent !important;
+                }
             }
         }
     }
@@ -128,7 +139,7 @@ li {
         &.collapsed {
             .folder-header {
                 border-left: 2px solid transparent;
-                background: $color-2;
+                background-color: $color-2 !important;
                 color: $color-4;
                 h3 {
                     text-shadow: unset;
@@ -137,14 +148,19 @@ li {
         }
         & > .folder-header {
             border-left: 2px solid $color-1;
-            background: $color-1;
+            background-color: $color-1 !important;
             color: $color-4;
             h3 {
                 color: $color-4;
             }
-            .create-folder, .create-entity {
+            .create-folder, .create-document {
                 color: unset;
                 &:hover {
+                    color: $color-5;
+                }
+            }
+            .create-button:hover {
+                .fa-plus {
                     color: $color-5;
                 }
             }
