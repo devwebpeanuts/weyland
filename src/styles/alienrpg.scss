@@ -75,11 +75,6 @@
     }
 }
 .tabs {
-    & > * {
-        flex: 1;
-    }
-    height: 32px;
-    line-height: 32px;
     .item {
         display: flex;
         align-items: center;

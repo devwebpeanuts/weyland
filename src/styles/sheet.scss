@@ -1,5 +1,10 @@
 .sheet {
     nav.sheet-tabs {
+        & > * {
+            flex: 1;
+        }
+        height: 32px;
+        line-height: 32px;
         border-top: unset;
         border-bottom: unset;
         background: $color-5;
