@@ -13,6 +13,11 @@
 #client-settings {
     nav {
         &.tabs {
+            & > * {
+                flex: 1;
+            }
+            height: 32px;
+            line-height: 32px;
             border-bottom: 0;
             background: $color-5;
             color: $color-4;
