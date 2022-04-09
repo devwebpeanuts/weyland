@@ -1,5 +1,5 @@
 #controls {
-    .scene-control, .control-tool {
+    ol.control-tools > li {
         &, &.toggle {
             background: $color-4;
             color: $color-2;
