@@ -72,11 +72,19 @@
     }
 }
 .tabs {
+    & > * {
+        flex: 1;
+    }
+    height: 32px;
+    line-height: 32px;
     .item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         font-size: 0.85em !important;
-        &.active {
+        &.active, &:hover, &.active:hover {
             font-size: 0.85em !important;
-            text-shadow: 0 0 10px $color-1;
+            text-shadow: 0 0 10px $color-1 !important;
         }
     }
 }
