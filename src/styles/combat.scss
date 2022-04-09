@@ -35,6 +35,9 @@
             .token-name {
                 .combatant-control {
                     color: $color-2;
+                    &:hover{
+                        color: $color-5;
+                    }
                 }
             }
             .token-resource {
@@ -51,6 +54,14 @@
                 .token-initiative {
                     .initiative {
                         color: $color-4;
+                    }
+                }
+                .token-name {
+                    .combatant-control {
+                        color: $color-1;
+                        &:hover{
+                            color: $color-5;
+                        }
                     }
                 }
             }
