@@ -1,22 +1,17 @@
-#combat-carousel {
-    .carousel-icon {
-        border: 2px solid $color-2;
-        border-radius: 0;
-        width: 40px;
-        height: 40px;
-        background: $color-4;
-
+#controls {
+    ol.control-tools > li {
+        img.carousel-icon {
+            filter: invert(49%) sepia(8%) saturate(3366%) hue-rotate(88deg) brightness(103%) contrast(89%);
+        }
         &:hover {
-            border-bottom: 0;
-            border: 2px solid $color-1;
-            background: $color-1;
-            box-shadow:  0 0 10px $color-1;
-
-            #combat-carousel-toggle {
-                filter: invert(100%) sepia(0%) saturate(7469%) hue-rotate(220deg) brightness(104%) contrast(108%);
+            img.carousel-icon {
+                filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(0%) contrast(100%);
             }
         }
     }
+}
+
+#combat-carousel {
     .encounter-info {
         color: $color-5;
         background: $color-4;
@@ -29,7 +24,7 @@
             color: $color-1;
         }
     }
-    .combat-control {
+    .combat-controls {
         a {
             color: $color-2;
             border: 2px solid $color-2;
@@ -77,10 +72,11 @@
             text-shadow: 0 0 8px $color-1;
         }
     }
-}
 
-#combat-carousel-toggle {
-    border: 0;
-    border-radius: 0;
-    filter: invert(49%) sepia(8%) saturate(3366%) hue-rotate(88deg) brightness(103%) contrast(89%);
+    .drag-handle {
+        color: $color-2;
+        &:hover {
+            color: $color-5;
+        }
+    }
 }
