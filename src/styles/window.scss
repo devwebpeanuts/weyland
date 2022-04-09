@@ -33,6 +33,11 @@
     }
 }
 
+:root {
+    scrollbar-color: $color-2 $color-7;
+    scrollbar-width: thin;
+}
+
 ::-webkit-scrollbar-thumb {
     outline: none !important;
     border-radius: 0 !important;
