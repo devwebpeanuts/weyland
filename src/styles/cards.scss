@@ -1,0 +1,24 @@
+.cards-config {
+    .cards-header {
+        border-top: none;
+        border-bottom: none;
+        color: $color-4;
+        background-color: $color-5;
+        height: 32px;
+        line-height: 32px;
+    }
+
+    a.card-control {
+        color: $color-4;
+    }
+
+    .card-faces {
+        .card-control {
+            color: $color-2;
+
+            &[disabled] {
+                color: $color-6;
+            }
+        }
+    }
+}
